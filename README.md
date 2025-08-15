@@ -1,6 +1,6 @@
 # Birthdays REST Service (Spring Boot)
 
-Väike Spring Boot teenus, mis salvestab POST päringuga saadetud JSON andmebaasi (H2, JPA).
+Spring Boot teenus, mis salvestab POST päringuga saadetud JSON andmebaasi (H2, JPA).
 
 ## Käivitamine
 
@@ -9,8 +9,6 @@ Väike Spring Boot teenus, mis salvestab POST päringuga saadetud JSON andmebaas
 - Maven 3.9+
 
 ```bash
-mvn spring-boot:run
-# või
 mvn clean package && java -jar target/birthdays-service-0.0.1-SNAPSHOT.jar
 ```
 
@@ -28,6 +26,3 @@ Body (JSON):
 }
 ```
 Vastuse staatus: `201 Created` ja Location päis.
-
-
-**Märkus:** See versioon sisaldab ainult POST teenust vastavalt algsele ülesandele.
